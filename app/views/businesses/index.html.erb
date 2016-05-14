@@ -1,2 +1,23 @@
-<h1>Businesses#index</h1>
-<p>Find me in app/views/businesses/index.html.erb</p>
+<h1 class='center'>Active Businesses</h1>
+<table class='responsive-table '>
+  <thead>
+    <tr>
+      <th>Business Type</th>
+      <th>Name</th>
+      <th>Start Date</th>
+      <th>Owner</th>
+      <th>Phone Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @businesses.each do |business| %>
+      <tr>
+        <td><%= business.business_type %></td>
+        <td><%= business.name %></td>
+        <td><%= business.start_date %></td>
+        <td><%= business.owner %></td>
+        <td><%= business.business_phone %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
