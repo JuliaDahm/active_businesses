@@ -1,10 +1,10 @@
 <h1 class='center'>Active Businesses</h1>
 
 <form id="live-search" action="" class="styled center container" method="post">
-    <fieldset>
-        <input type="text" class="text-input" id="filter" value="" />
-        <span id="filter-count"></span>
-    </fieldset>
+  <fieldset>
+     <input type="text" class="text-input" id="filter" value="" placeholder="Search for a business by name, start date, etc."/>
+     <span id="filter-count"></span>
+  </fieldset>
 </form>
 
 <table class='responsive-table'>
@@ -30,4 +30,4 @@
   </tbody>
 </table>
 
-  <%= will_paginate @businesses, class: 'center pagination' %>
+ <%= will_paginate @businesses, class: 'center pagination' %>

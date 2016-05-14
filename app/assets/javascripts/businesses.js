@@ -11,7 +11,7 @@ $(document).ready(function(){
           }
       });
       var numberItems = count;
-      $("#filter-count").text("Results = "+count);
+      $("#filter-count").text("Results = " + count);
   });
 
 });
