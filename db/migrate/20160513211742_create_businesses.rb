@@ -8,6 +8,8 @@ class CreateBusinesses < ActiveRecord::Migration
       t.string :start_date
 
       t.timestamps null: false
+
+
     end
   end
 end
