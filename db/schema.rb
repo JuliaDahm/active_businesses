@@ -19,9 +19,6 @@ ActiveRecord::Schema.define(version: 20160513211742) do
   create_table "businesses", force: :cascade do |t|
     t.string   "business_phone"
     t.string   "business_type"
-    t.string   "location"
-    t.string   "location_city"
-    t.string   "location_state"
     t.string   "name"
     t.string   "owner"
     t.string   "start_date"
