@@ -53,6 +53,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    figaro (1.1.1)
+      thor (~> 0.14)
     filterrific (2.0.5)
       rails (>= 3.1.0)
     globalid (0.3.6)
@@ -86,6 +88,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    puma (3.4.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -157,12 +160,14 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  figaro
   filterrific
   jbuilder (~> 2.0)
   jquery-rails
   materialize-sass
   pg (~> 0.15)
   pry
+  puma
   rails (= 4.2.5.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
